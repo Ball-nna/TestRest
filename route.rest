@@ -1,10 +1,23 @@
 GET http://localhost:3000/subscribers
 ###
-GET http://localhost:3000/subscribers/29302
+GET http://localhost:3000/subscribers/62416d89b2876d4ce480c908
+
 ###
 POST http://localhost:3000/subscribers
-Content-Type: :application/json
+Content-Type: application/json
 
-   { "name":"Amazing Person",
-    "subscribedToChannel":"Web Dev simplified"
-    }
+{
+    "name": "Kittipat Tongngern",
+    "subscribedToChannel": "Born To Dev" 
+} 
+###
+PATCH  http://localhost:3000/subscribers/62416d89b2876d4ce480c908
+Content-Type: application/json
+
+{
+    "name": "Kittipat Tongngern"
+    
+} 
+###
+DELETE http://localhost:3000/subscribers/62417102b2876d4ce480c910
+ 
